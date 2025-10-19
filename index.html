@@ -17,7 +17,6 @@
     const engine = new BABYLON.Engine(canvas, true);
     const scene = new BABYLON.Scene(engine);
 
-    // Загружаем твой файл из корня репозитория
     BABYLON.SceneLoader.Append("", "All12-compressed.glb", scene, () => {
       scene.createDefaultCamera(true, true, true);
       scene.activeCamera.alpha += Math.PI;
